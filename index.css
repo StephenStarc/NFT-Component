@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --pri-clr-blue:hsl(215, 51%, 70%);
+    --pri-clr-cyan:hsl(178, 100%, 50%);
+
+    --neut-clr-vb:hsl(217, 54%, 11%); /*Main Bg */
+    --neut-clr-vvb:hsl(216, 50%, 16%);  /*Card bg */
+    --neut-clr-vvvb:hsl(215, 32%, 27%); /*Line */
+    --wht:hsl(0, 0%, 100%);
+
+    --padd:1.9em;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/back.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    color: var(--wht);
+    font-family: 'Outfit', sans-serif;
+}
+.nft-card{
+    max-width: 20em;
+    background-color: #017477;
+    padding: 1.5em;
+    border-radius: 0.6em;
+    line-height: 1.6rem;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    transition: all 2sec;
+}
+img{
+    width:100%;
+    border-radius: 0.6em;
+}
+h1{
+    font-size: 1.3rem;
+    margin: 0.6em auto;
+    color: var(--wht);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em auto;
+}
+.class-icon{
+    display:flex;
+    align-items: center;
+}
+.icon1{
+    width: 11px;
+    height: 17px;
+    margin: 4px;
+}
+.icon2{
+    width: 17px;
+    height: 17px;
+    margin: 4px;
+}
+.author{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.content::after{
+    content: "";
+    border-top: 1px solid red;
+}
+.hr{
+    margin: 0.5em 0;
+}
+.creator{
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.price{
+    color:var(--pri-clr-cyan);
+}
+span{
+    color:var(--pri-clr-blue);
+    margin: 0;
+}
