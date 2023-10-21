@@ -8,7 +8,6 @@
     --neut-clr-vvb:hsl(216, 50%, 16%);  /*Card bg */
     --neut-clr-vvvb:hsl(215, 32%, 27%); /*Line */
     --wht:hsl(0, 0%, 100%);
-
     --padd:1.9em;
 }
 
@@ -115,3 +114,4 @@ span{
     color:var(--pri-clr-blue);
     margin: 0;
 }
+/* Code by Stephen Starc */
